@@ -22,29 +22,16 @@ const LanguageModels: Record<ModelId, llm.ModelDetails> = {
       maxTokens: 4096,
     },
   },
-  'mistral-medium-2508': {
-    name: 'Mistral Medium 3.1',
-    description: 'Frontier-class multimodal model released August 2025. Improving tone and performance.',
+  'mistral-small-2603': {
+    name: 'Mistral Small 4',
+    description: 'Mistral Small 4 (March 2026), a multimodal general-purpose model with a 256k context window.',
     tags: [/* TODO: Add tags */],
     input: {
-      costPer1MTokens: 0.4,
-      maxTokens: 128_000,
+      costPer1MTokens: 0.15,
+      maxTokens: 256_000,
     },
     output: {
-      costPer1MTokens: 2,
-      maxTokens: 4096,
-    },
-  },
-  'mistral-small-2506': {
-    name: 'Mistral Small 3.2',
-    description: 'An update to the previous small model, released June 2025.',
-    tags: [/* TODO: Add tags */],
-    input: {
-      costPer1MTokens: 0.1,
-      maxTokens: 128_000,
-    },
-    output: {
-      costPer1MTokens: 0.3,
+      costPer1MTokens: 0.6,
       maxTokens: 4096,
     },
   },
@@ -87,32 +74,6 @@ const LanguageModels: Record<ModelId, llm.ModelDetails> = {
     },
     output: {
       costPer1MTokens: 0.1,
-      maxTokens: 4096,
-    },
-  },
-  'magistral-medium-2509': {
-    name: 'Magistral Medium 1.2',
-    description: 'Frontier-class multimodal reasoning model update of September 2025.',
-    tags: [/* TODO: Add tags */],
-    input: {
-      costPer1MTokens: 2,
-      maxTokens: 128_000,
-    },
-    output: {
-      costPer1MTokens: 5,
-      maxTokens: 4096,
-    },
-  },
-  'magistral-small-2509': {
-    name: 'Magistral Small 1.2',
-    description: 'Small multimodal reasoning model update of September 2025.',
-    tags: [/* TODO: Add tags */],
-    input: {
-      costPer1MTokens: 0.5,
-      maxTokens: 128_000,
-    },
-    output: {
-      costPer1MTokens: 1.5,
       maxTokens: 4096,
     },
   },
